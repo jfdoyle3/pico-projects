@@ -1,0 +1,11 @@
+import machine
+import utime
+button = machine.Pin(14, machine.Pin.IN)
+led_onboard = machine.Pin(25, machine.Pin.OUT)
+while True:
+    if button.value() == 1:
+        # When the button is pressed, GPIO will be connected to GND.
+        print("You pressed the button!")
+        led_onboard.value(1)
+        utime.sleep(1)
+        led_onboard.value(0)
