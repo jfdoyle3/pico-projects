@@ -1,3 +1,5 @@
+## Turns on an external LED
+
 import machine
 import utime
 
