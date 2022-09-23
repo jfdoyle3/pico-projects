@@ -1,6 +1,3 @@
-## Push button to turn on board LED on and off
-
-
 import machine
 import utime
 button = machine.Pin(14, machine.Pin.IN)
