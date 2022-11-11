@@ -23,6 +23,8 @@ def main():
     lcd.custom_char(0, happy_face)
     lcd.putchar(chr(0))
     lcd.putchar(b'\x00')
+    utime.sleep(2)
+    lcd.clear()
 
 #GitHub/Doc for I2cLcd
 # https://github.com/dhylands/python_lcd
